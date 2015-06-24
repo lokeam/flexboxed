@@ -1,7 +1,4 @@
 /* Global styles */
-body {
-
-}
 
 a {
 	text-decoration: none;
@@ -32,6 +29,12 @@ button {
 
 }
 
+.logo_wrapper {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .masthead_left {
 	display: flex;
 	flex: 0 1 auto;
@@ -39,21 +42,10 @@ button {
 	justify-content: space-around;
 }
 
-.logo_wrapper {
-	display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo_wrapper img {
-}
-
 .masthead_center {
 	display: flex;
 	flex: 0 1 auto;
 	justify-content: center;
-	width: 585px;
-	height: 29px;
 }
 
 .masthead_right {
@@ -95,6 +87,17 @@ button {
 	height: 29px;
 }
 
+.icon, .icon_sm {
+	color: #333;
+}
+
+.icon {
+	font-size: 14px;
+}
+
+.icon_sm {
+	font-size: 10px;
+}
 
 /* form elements */
 .flexbox_field {
@@ -121,25 +124,70 @@ button {
 
 .burger_button {
 	border: solid 1px transparent;
-  outline: 0;
   background: none;
-  color: #333;
   box-shadow: none;
+  outline: 0;
 }
 
-.ic-search {
-	.element:before {
-    content: "\f002";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-/*--adjust as necessary--*/
-    color: #000;
-    font-size: 18px;
-    padding-right: 0.5em;
-    position: absolute;
-    top: 10px;
-    left: 0;
+.button_container {
+	align-items: center;
+	display: flex;
 }
+
+.button_container:hover {
+	border: 1px solid;
+	border-radius: 2px;
+}
+
+/* nyt */
+.masthead_menu {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+	width: 570px;
+}
+
+
+.masthead_lower_nyt {
+  min-height: 90px;
+  padding: 8px 0;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 2px solid #000;
+}
+
+.masthead_menu li {
+	padding: 0 10;
+	font: 11px;
+}
+
+/* youtube */
+.masthead_left_yt {
+	width: 130px;
+}
+.masthead_center_yt {
+	width: 585px;
+	height: 29px;
+}
+
+.burger_button_yt {
+	color: #333;
+	height: 28px;
+	padding: 0 10px;
+}
+
+.button_container_yt {
+	border-color: #c6c6c6;
+	border-radius: 2px;
+	margin-left: 3px;
+}
+
+.button_container_yt:hover {
+	background: #f0f0f0;
+	border-color: #c6c6c6;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.10);
+	margin-left: 3px;
 }
