@@ -139,7 +139,15 @@ button {
 	border-radius: 2px;
 }
 
-/* nyt */
+/* NYT */
+.masthead_right .header_button_nyt {
+	background-color: #6288A5;
+  border: 1px solid #4D7B9F;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
 .masthead_menu {
 	align-items: center;
 	display: flex;
@@ -151,7 +159,6 @@ button {
 	width: 570px;
 }
 
-
 .masthead_lower_nyt {
   min-height: 90px;
   padding: 8px 0;
@@ -161,12 +168,17 @@ button {
 
 .masthead_menu li {
 	padding: 0 10;
-	font: 11px;
+	font-size: 11px;
 }
 
-/* youtube */
+.nyt .fa-cog {
+	color: #333;
+	font-size: 18px;
+}
+
+/* YouTube */
 .masthead_left_yt {
-	width: 130px;
+	width: 140px;
 }
 .masthead_center_yt {
 	width: 585px;
@@ -174,7 +186,9 @@ button {
 }
 
 .burger_button_yt {
+	align-items: center;
 	color: #333;
+	display: flex;
 	height: 28px;
 	padding: 0 10px;
 }
@@ -190,4 +204,8 @@ button {
 	border-color: #c6c6c6;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.10);
 	margin-left: 3px;
+}
+
+.button_container_yt .fa-sort-desc {
+	padding-left: 3px;
 }
