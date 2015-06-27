@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Flexboxed - popular website headings recreated with flexbox</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/headers.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel=stylesheet>
 
-
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
@@ -25,6 +24,9 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class="main-container">
+
+    <!--TO DO:-->
+    <!--SEPARATE EACH SECTION INTO INDIVIDUAL REACT.JS TEMPLATES-->
 
     <h3>YouTube/Gmail</h3>
 
@@ -57,16 +59,18 @@
 
 
       <h3>The New York Times</h3>
-
+      <div class="shell">
         <div class="flexboxheader nyt">
           <div class="flexbox_wrapper">
 
             <div class="masthead_left">
-              <a class="header_button upload" href="">
-                <span class="icon-reorder"></span>Sections
+              <a class="header_button" href="">
+                <span class="icon-reorder fa fa-bars"></span>
+                <span class="button_text">SECTIONS</span>
               </a>
-              <a class="header_button sign_in" href="#">
-                <span class="icon-search"></span>Search
+              <a class="header_button" href="#">
+                <span class="icon-search fa fa-search"></span>
+                <span class="button_text">SEARCH</span>
               </a>
             </div>
 
@@ -77,10 +81,18 @@
             </div>
           </div>
         </div>
-        <div class="flexbox header masthead_lower">
+        <div class="flexboxheader masthead_lower">
           <div class="masthead_left"></div>
-          <div class="masthead_center">
-<!--             <img src="http://placehold.it/369x64"> -->
+          <div class="masthead_center masthead_lower_nyt">
+
+          <div class="masthead_lower_left">
+            <img src="http://placehold.it/184x90">
+          </div>
+          <div class="masthead_lower_center">
+            <div class="main_logo">
+              <img src="http://placehold.it/379x64">
+            </div>
+
             <ul class="masthead_menu">
               <li>Date</li>
               <li>
@@ -96,10 +108,45 @@
                 Weather
               </li>
               <li>Markets</li>
-            </ul> 
+            </ul>
+          </div>
+          <div class="masthead_lower_right">
+            <img src="http://placehold.it/184x90">
+          </div>
+
+            <div class="editions_tab">
+              <ul class="editions_menu">
+                <li class="">U.S.</li>
+                <li class=""><a href="#">International</a></li>
+                <li class="edition-chinese-toggle"><a href="#" target="_blank">中文</a></li>
+              </ul>
+            </div>
           </div>
           <div class="masthead_right"></div>
         </div>
+        <div class="flexboxheader masthead_mini_nav">
+          <ul class="mini-navigation-menu">
+            <li><a href="#">World</a></li>
+            <li><a href="#">U.S</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Opinion</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Style</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Magazine</a></li>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="#">ALL</a></li>
+          </ul>
+        </div>
+      </div>
 
         <div class="main wrapper clearfix"></div> <!-- #main -->
     </div> <!-- #main-container -->
