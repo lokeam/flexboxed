@@ -14,13 +14,13 @@ ul {
 }
 
 .flexboxheader {
-	align-items: center;
-	-webkit-box-flex: 0;
+  align-items: center;
+  -webkit-box-flex: 0;
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .flexbox_wrapper {
@@ -58,6 +58,10 @@ ul {
 }
 
 /* theme specific headers*/
+
+.am {
+	 background-color: #232f3e;
+}
 
 .yt {
 	background: #fff;
@@ -103,6 +107,10 @@ ul {
 	font-size: 10px;
 }
 
+.icon_lg {
+	font-size: 25px;
+}
+
 /* form elements */
 .flexbox_field {
 	border-top: 1px solid #ccc;
@@ -141,6 +149,97 @@ ul {
 .button_container:hover {
 	border: 1px solid;
 	border-radius: 2px;
+}
+
+/* Amazon */
+.logo_wrapper_container{
+	position: relative;
+	width: 192px;
+}
+
+.logo_tagline {
+	color: #48a3c6;.
+	font-family: arial,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	left: 93px;
+	line-height: 11px;
+	position: absolute;
+	text-decoration: underline;
+	top: 31px;
+}
+
+.masthead_left_am {
+	display: flex;
+	flex: 0 1 auto;
+	justify-content: space-around;
+}
+
+.flexbox_search {
+	display: flex;
+  flex: 0 1 auto;
+  justify-content: center;
+}
+
+.nav_search_scope {
+	background-color: #dadada;
+	border: 1px solid rgba(147,128,108,.25);
+	border-radius: 4px 0 0 4px;
+	font-size: 12px;
+	padding: .5em .75em;
+}
+
+.nav_search_scope select {
+	position: absolute;
+  display: block;
+  top: -1px;
+  left: 0;
+  height: 35px;
+  width: auto;
+  font-family: arial,sans-serif;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+  border: 0;
+  line-height: 35px;
+}
+
+.amazon_field {
+	box-shadow: none;
+	min-width: 383px;
+	max-width: 567px;
+}
+
+.amazon_search {
+	background-color: #febd69;
+	border: none;
+	padding: 0em 0.4em;
+}
+
+.nav_shop {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.nav_shop_list {
+	display: flex;
+  flex-direction: row;
+}
+
+.nav_shop_list {
+	color: #ccc;
+	font-size: 13px;
+  padding: 0;
+}
+
+.nav_shop_list li {
+	margin-left: 25px;
 }
 
 /* NYT */
@@ -182,12 +281,16 @@ ul {
   z-index: 1;
 }
 
-.masthead_lower_left{}
+.masthead_lower_left{
+	display: flex;
+}
+
 .masthead_lower_center{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+
 .masthead_lower_right{}
 
 .masthead_menu li {
