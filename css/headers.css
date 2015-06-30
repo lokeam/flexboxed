@@ -175,6 +175,18 @@ ul {
 	justify-content: space-around;
 }
 
+.masthead_right_am {
+	align-items: center;
+	display: flex;
+	flex: 0 1 auto;
+	justify-content: space-around;
+}
+
+.promo_wrapper {
+	align-items: center;
+	display: flex;
+}
+
 .flexbox_search {
 	display: flex;
   flex: 0 1 auto;
@@ -211,8 +223,7 @@ ul {
 
 .amazon_field {
 	box-shadow: none;
-	min-width: 383px;
-	max-width: 567px;
+	width: 381px;
 }
 
 .amazon_search {
@@ -221,10 +232,40 @@ ul {
 	padding: 0em 0.4em;
 }
 
-.nav_shop {
-	color: #fff;
+.nav_mm_button {
 	font-size: 16px;
 	font-weight: bold;
+	padding: 6px 27px 0 15px;
+}
+
+.nav_mm_button a {
+	color: #fff;
+	line-height: 15px;
+}
+
+.nav-a {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-a-2 {
+	color: #fff;
+	padding: 0.5rem 0.1rem;
+	display: flex;
+  flex-direction: column;
+  line-height:14px;
+}
+
+.nav-line-1 {
+	font-size: 12px;
+}
+
+.nav-line-2 {
+	font-size: 14px;
+}
+
+.nav-line-2 .icon_sm {
+	color: #a7acb2;
 }
 
 .nav_shop_list {
@@ -242,6 +283,34 @@ ul {
 	margin-left: 25px;
 }
 
+.nav-tools {
+	display: flex;
+	flex: 1;
+  justify-content: space-around;
+}
+
+.nav-tools .nav-line-2 {
+	font-weight: bold;
+}
+
+.nav_cart {
+	font-size: 35px;
+	line-height: 25px;
+}
+
+.amazon_chev {
+	color: #E1E6EA;
+	font-size: 38px;
+	margin-left: 15px;
+}
+
+.masthead_lower_am {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 /* NYT */
 .shell {
 	padding: 0 50px;
@@ -255,10 +324,10 @@ ul {
 }
 
 .masthead_right .header_button_nyt {
-	background-color: #6288A5;
-  border: 1px solid #4D7B9F;
+	background-color: #6288a5;
+  border: 1px solid #4d7b9f;
   border-radius: 3px;
-  color: #FFFFFF;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -281,17 +350,21 @@ ul {
   z-index: 1;
 }
 
-.masthead_lower_left{
+.masthead_lower_left {
 	display: flex;
 }
 
-.masthead_lower_center{
+.masthead_lower_center {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.masthead_lower_right{}
+.masthead_lower_right{
+	display: flex;
+	flex: 0 0 40%;
+	justify-content: flex-end;
+}
 
 .masthead_menu li {
 	padding: 0 10;
